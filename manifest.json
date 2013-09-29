@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Ogame Odyssey",
-  "description": "This extension explores univers and spy planetes, report free slots.",
+  "description": "This extension explores and spies planets",
   "version": "1.0",
   "web_accessible_resources": [ "js/jquery-2.0.3.min.map" ],
   "content_scripts": [ 
