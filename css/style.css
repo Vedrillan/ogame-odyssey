@@ -1,0 +1,73 @@
+#odyssey-scan {
+    position:absolute;
+    top: 32px;
+    left: 570px;
+}
+
+#odyssey-scan a {
+    font-weight: 700;
+    color: #6f9fc8;
+}
+
+#odyssey-config .head{
+    background: url('http://gf1.geo.gfsrv.net/cdn63/10e31cd5234445e4084558ea3506ea.gif') no-repeat scroll 0px 0px transparent;
+    height: 28px;
+    margin-top: 8px;
+    position: relative;
+    text-align: center;
+    font: 700 12px/23px Verdana,Arial,Helvetica,sans-serif;
+    color: rgb(111, 159, 200);
+}
+
+#odyssey-config .content {
+    background: url("http://gf1.geo.gfsrv.net/cdn03/db530b4ddcbe680361a6f837ce0dd7.gif") repeat-y;
+    margin: 0;
+    padding: 10px 0 1px 0;
+}
+
+#odyssey-config .footer {
+    background: transparent url("http://gf3.geo.gfsrv.net/cdnbe/04a7b39dc27c29c4c2cadd3fd44ec0.gif") no-repeat 0 -13px;
+    display: block;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#odyssey-config .content .wrap {
+    padding: 15px 0;
+}
+
+#odyssey-config .content .wrap .group {
+    border: 1px solid #000;
+    width: 606px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+#odyssey-config .content .wrap .group .fieldwrapper {
+    margin: 0;
+    line-height: 22px;
+    color: #6f9fc8;
+    font-size: 11px;
+    width: 606px;
+    overflow: hidden;
+    padding: 7px 0;
+}
+
+#odyssey-config .content .wrap .group .fieldwrapper label {
+    color: #6f9fc8;
+    float: left;
+    width: 320px;
+    margin-right: 15px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+#odyssey-config .content .wrap .group .fieldwrapper .thefield {
+    margin-top: 2px;
+}
+
+#odyssey-config .content button.saved {
+    background: linear-gradient(to bottom,#52be86 0,#57c596 17%,#62cf9b 51%,#44ab75 53%,#3dae7e 85%,#60c994 100%);
+    border-color: #70d8a3 #57c696 #54ba7e #62d2a2;
+}
