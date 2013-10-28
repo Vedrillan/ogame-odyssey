@@ -1,4 +1,4 @@
-var Explorer = {
+Explorer = {
     currentSystem: null,
     currentGalaxy: null,
 
@@ -14,7 +14,7 @@ var Explorer = {
 
     analyze: function() {
         // inject some special js to get necessary data
-        inject();
+        injectData();
         this.currentGalaxy = parseInt($('body').attr('data-galaxy'));
         this.currentSystem = parseInt($('body').attr('data-system'));
 
@@ -89,6 +89,7 @@ var Explorer = {
                 }
                 // the token changes sometime so retry once just in case
                 if (!data.response.success && !retry) {
+                    console.log('retry for ' + galaxy + ':' + system + ':' + position);
                     Explorer.scootPlanet(galaxy, system, position, true);
                 } else {
                     Explorer.displayMessage(data.response);

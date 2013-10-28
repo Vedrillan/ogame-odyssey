@@ -4,13 +4,13 @@
   "name": "Ogame Odyssey",
   "description": "This extension explores and spies planets",
   "version": "1.0",
-  "web_accessible_resources": [ "js/jquery-2.0.3.min.map" ],
+  "web_accessible_resources": [ "*" ],
   "content_scripts": [ 
     {
-      "js": [ "js/jquery-2.0.3.min.js", "js/explorer.js", "js/config.js", "js/init.js" ],
+      "js": [ "lib/jquery-2.0.3.min.js", "js/config.js", "js/explorer.js", "js/init.js" ],
       "css": [ "css/style.css" ],
-      "matches": [ "http://*.ogame.com.ar/game/*", "http://*.ae.ogame.org/game/*", "http://*.ba.ogame.com/game/*", "http://*.ogame.com.br/game/*", "http://*.ogame.cz/game/*", "http://*.ogame.de/game/*", "http://*.ogame.dk/game/*", "http://*.ogame.com.es/game/*", "http://*.fi.ogame.org/game/*", "http://*.ogame.fr/game/*", "http://*.ogame.gr/game/*", "http://*.hr.ogame.org/game/*", "http://*.ogame.com.hr/game/*", "http://*.ogame.hu/game/*", "http://*.ogame.it/game/*", "http://*.ogame.jp/game/*", "http://*.mx.ogame.org/game/*", "http://*.ogame.no/game/*", "http://*.ogame.nl/game/*", "http://*.ogame.org/game/*", "http://*.ogame.pl/game/*", "http://*.ogame.com.pt/game/*", "http://*.ogame.ro/game/*", "http://*.ogame.ru/game/*", "http://*.ogame.se/game/*", "http://*.ogame.si/game/*", "http://*.ogame.sk/game/*", "http://*.ogame.tw/game/*", "http://*.tr.ogame.org/game/*", "http://*.ogame.us/game/*" ],
-      "include_globs": [ "http://*.ogame.*/game/index.php\\?page=*" ]
+      "matches": [ "http://*/game/index.php*" ],
+      "include_globs": [ "http://*.ogame.*/game/index.php*" ]
     }
   ],
   "permissions": [

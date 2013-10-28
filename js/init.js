@@ -13,9 +13,20 @@ function data() {
 	$('body').attr('data-shipamount', spionageAmount);
 }
 
-function inject() {
+function dataMiniFleet () {
+	$('body').attr('data-minifleettoken', miniFleetToken);
+	$('body').attr('data-minifleetlink', miniFleetLink);
+}
+
+function injectData() {
 	var script = document.createElement('script');
 	script.appendChild(document.createTextNode('('+ data +')();'));
+	(document.body || document.head || document.documentElement).appendChild(script);
+}
+
+function injectDataMiniFleet () {
+	var script = document.createElement('script');
+	script.appendChild(document.createTextNode('('+ dataMiniFleet +')();'));
 	(document.body || document.head || document.documentElement).appendChild(script);
 }
 
@@ -24,7 +35,7 @@ chrome.storage.sync.get(function(item) {
     minrank = item.minrank || 5000;
 
     Configuration.init();
-    // Run only on galaxy view
+    // Run the explorer
 	if (document.location.href.indexOf('page=galaxy') != -1) {
 		Explorer.init();
 	}

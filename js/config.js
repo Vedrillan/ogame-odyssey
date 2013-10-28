@@ -1,4 +1,4 @@
-var Configuration = {
+Configuration = {
     init: function() {
         $('#odyssey').click(function(){
             $('#odyssey-config').toggle();

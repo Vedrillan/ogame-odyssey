@@ -71,3 +71,7 @@
     background: linear-gradient(to bottom,#52be86 0,#57c596 17%,#62cf9b 51%,#44ab75 53%,#3dae7e 85%,#60c994 100%);
     border-color: #70d8a3 #57c696 #54ba7e #62d2a2;
 }
+
+#odyssey-attackgt {
+    margin: 0 5px;
+}
