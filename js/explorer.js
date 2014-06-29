@@ -68,6 +68,24 @@ Explorer = {
                 }
             });
         }
+        
+        if ($(data).find('.playername.inactive:not(.vacation)').length > 0) {
+            // long inactive found, check level
+            $(data).find('.playername.inactive:not(.vacation)').each(function(i, e){
+                if ($(e).hasClass('strong')) return true; // security check in case something goes not as expected
+                var rankElement = $(e).find('.galaxyTooltip .ListLinks .rank a');
+                // if the rank is high enough, go scoot
+                if (rankElement.html() < minrank) {
+                    elClass = rankElement.parents('td.playername').attr('class').split(' ');
+                    for(var i = 0; i < elClass.length; i++) {
+                        if (elClass[i].indexOf('js_playerName') != -1) {
+                            var position = elClass[i].substring('js_playerName'.length);
+                            Explorer.scootPlanet(galaxy, system, position);
+                        }
+                    }
+                }
+            });
+        }
     },       
 
     scootPlanet: function(galaxy, system, position, retry) {
